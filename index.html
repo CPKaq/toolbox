@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CPK的工具箱</title>
+	<style>
+		body
+		{
+			background-color: #111;
+			color: #ddd;
+			margin: 0 20%;
+		}
+
+		a
+		{
+			text-decoration: none;
+			color: #ddd;
+			font-weight: bold;
+			padding: 0 0.2em;
+			border-bottom: 2px solid #888;
+		}
+		a:hover
+		{
+			background-color: #888;
+			color: #111;
+		}
+
+		::selection {
+		color: #fff;
+		background: #888;
+}
+
+		.nav
+		{
+			list-style-type: none;
+			border: 1px solid;
+			padding: 0;
+			margin: 1em 0;
+			overflow: hidden;
+		}
+		.navitem
+		{
+			border-right: 1px solid;
+			float: left;
+			display: inline;
+			width: 25%;
+			margin: 0 0 0 -1px;
+		}
+		.navitem a
+		{
+			display: block;
+			color: #ddd;
+			text-align: center;
+			padding: 0.5em;
+			text-decoration: none;
+			border: none;
+		}
+		.navitem a:hover
+		{
+			background-color: #888;
+		}
+
+		.category
+		{
+			margin: 2em 0;
+			border-left: 1px solid;
+			border-bottom: 4px solid;
+		}
+		.catetop
+		{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			border-top: 1px solid;
+			border-right: 6px solid;
+			background: #888;
+		}
+		.catename
+		{
+			float: left;
+			font-weight: bold;
+		}
+		.catebtn
+		{
+			float: right;
+			width: 10%;
+			border-top: 4px solid;
+			text-align: right;
+		}
+		.catecontent
+		{
+			padding: 0.5em;
+		}
+		h4
+		{
+			color: #111;
+			line-height: 100%;
+			margin: 0.5em;
+		}
+	</style>
+</head>
+<body>
+	<h1>工具箱</h1>
+
+	<ul class="nav">
+		<li class="navitem"><a href="#cate1">视觉设计</a></li>
+		<li class="navitem"><a href="#cate2">音频处理</a></li>
+		<li class="navitem"><a href="#cate3">数据资源</a></li>
+		<li class="navitem" style="border-right: none"><a href="#cate4">生成器/转换器</a></li>
+	</ul>
+
+	<div class="category" id="cate1">
+		<ul class="catetop">
+			<li class="catename"><h4>视觉设计</h4></li>
+			<li class="catebtn"></li>
+		</ul>
+		<div class="catecontent">
+			<p><a href="https://petalica-paint.pixiv.dev/index_zh.html">Petalica Paint</a> - AI自动上色</p>
+		</div>
+	</div>
+
+	<div class="category" id="cate2">
+		<ul class="catetop">
+			<li class="catename"><h4>音频处理</h4></li>
+			<li class="catebtn"></li>
+		</ul>
+		<div class="catecontent">
+			<p><a href="https://vocalremover.org/ch/">Vocal Remover</a> - 人声消除和提取</p>
+		</div>
+	</div>
+
+	<div class="category" id="cate3">
+		<ul class="catetop">
+			<li class="catename"><h4>数据资源</h4></li>
+			<li class="catebtn"></li>
+		</ul>
+		<div class="catecontent">
+			<p><a href="https://tdd.bunnyxt.com/">天钿Daily</a> - Bilibili Vocaloid相关数据统计</p>
+			<p><a href="https://steamdb.info/">Steam Database</a> - Steam游戏历史售价查询对比</p>
+		</div>
+	</div>
+
+	<div class="category" id="cate4">
+		<ul class="catetop">
+			<li class="catename"><h4>生成器/转换器</h4></li>
+			<li class="catebtn"></li>
+		</ul>
+		<div class="catecontent">
+			<p><a href="https://suulnnka.github.io/BullshitGenerator/">狗屁不通文章生成器</a> - 用于GUI开发时测试文本渲染（作者原文如此）</p>
+			<p><a href="https://lab.magiconch.com/nbnhhsh/">能不能好好说话?</a> - 拼音首字母缩写释义</p>
+		</div>
+	</div>
+</body>
+</html>
